@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            padding: 10px;
+            border: 2px solid #ccc;
+        }
+    </style>
+    <script src="./js/jquery.js"></script>
+</head>
+
+<body>
+    <div id="gallery">
+        <div class="menu">
+            <a href="images/pic1.jpg"><img src="images/th_pic1.jpg" /></a>
+            <a href="images/pic2.jpg"><img src="images/th_pic2.jpg" /></a>
+            <a href="images/pic3.jpg"><img src="images/th_pic3.jpg" /></a>
+        </div>
+        <div class="l_img">
+            <img src="images/pic1.jpg" alt="image1" />
+        </div>
+    </div>
+    <script>
+        $('.menu a').click(function (e) {
+            e.preventDefault();//a태그사용 무조건 적용
+            var path = $(this).attr('href');
+
+            $(".l_img img").attr({ src: path });
+
+        });
+    </script>
+</body>
+
+</html>
