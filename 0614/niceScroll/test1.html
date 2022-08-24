@@ -1,60 +1,93 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-<SCRIPT src="js/jquery-1.10.1.min.js" type="text/javascript"></SCRIPT>
-<SCRIPT src="js/jquery.nicescroll.min.js" type="text/javascript"></SCRIPT>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
 
-<style>
-*{ margin:0; padding:0;}
-body{ margin:0; padding:0; overflow-y: hidden}
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
+      }
 
-#all{ width:100%; height:100vh; position:relative;}
-#box1{ position:absolute; left:0; top:0;
-       width:100%; height:100vh;
-       background-color:#333;}
-#box2{ position:absolute; left:100%; top:0;
-       width:100%; height:100vh;
-       background-color:#990;}
-#box3{ position:absolute; left:200%; top:0;
-	   width:100%; height:100vh;
-       background-color:#3CF;}	   
-#box4{  position:absolute; left:300%; top:0;
-        width:100%; height:100vh;
-       background-color:#FC0;}	   
-#box5{ position:absolute; left:400%; top:0;
-	   width:100%; height:100vh;
-       background-color:#F0F;}	   
-</style>
-</head>
+      #all {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+      #box1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+      }
+      #box2 {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #990;
+      }
+      #box3 {
+        position: absolute;
+        left: 200%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #3cf;
+      }
+      #box4 {
+        position: absolute;
+        left: 300%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fc0;
+      }
+      #box5 {
+        position: absolute;
+        left: 400%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #f0f;
+      }
+    </style>
+  </head>
 
-<body>
-
-<script type="text/javascript">
-$(document).ready(
-
-  function() { 
-    $("#all").niceScroll({
-		cursorcolor:"#777",
-		cursorwidth:5,
-		cursoropacitymin:1,
-		scrollspeed:100,
-		cursorborderradius:'0',
-		mousescrollstep:40,
-		horizrailenabled:true,
-		cursoropacitymin:0,
-		cursoropacitymax:1,
-		background:"#c1c1c1",
-		cursorborder:"none",
-		autohidemode:false,
-		boxzoom:true,
-		zindex:99999,
-		horizrailenabled:true
-
-	});
-  }
-  /*
+  <body>
+    <!-- <script type="text/javascript">
+      $(document).ready(
+        function () {
+          $("#all").niceScroll({
+            cursorcolor: "#777",
+            cursorwidth: 5,
+            cursoropacitymin: 1,
+            scrollspeed: 100,
+            cursorborderradius: "0",
+            mousescrollstep: 40,
+            horizrailenabled: true,
+            cursoropacitymin: 0,
+            cursoropacitymax: 1,
+            background: "#c1c1c1",
+            cursorborder: "none",
+            autohidemode: false,
+            boxzoom: true,
+            zindex: 99999,
+            horizrailenabled: true,
+          });
+        }
+        /*
 cursorcolor - 커서 색상을 16 진수로 변경합니다. 기본값은 "# 000000"입니다.
 cursoropacitymin - 불투명도 변경 커서가 비활성 상태 (스크롤바의 "숨김"상태), 범위는 1에서 0까지, 기본값은 0 (숨김)입니다.
 cursoropacitymax - 불투명도 변경 매우 커서가 활성화되어 있습니다 (스크롤바의 "가시"상태). 범위는 1에서 0까지이며, 기본값은 1입니다 (전체 불투명도).
@@ -96,15 +129,14 @@ nativeparentscrolling, 내용의 하단을 감지하고 네이티브 스크롤�
 선택 스크롤을 활성화하고 선택 텍스트 (기본값 : true) 일 때 내용의 자동 스크롤 사용
   
   */
-); 
-</script>
-<div id="all" >
- <div id="box1"></div>
- <div id="box2"></div>
- <div id="box3"></div>
- <div id="box4"></div>
- <div id="box5"></div>
-</div>
-
-</body>
+      );
+    </script> -->
+    <div id="all">
+      <div id="box1"></div>
+      <div id="box2"></div>
+      <div id="box3"></div>
+      <div id="box4"></div>
+      <div id="box5"></div>
+    </div>
+  </body>
 </html>
